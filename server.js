@@ -103,10 +103,12 @@ app.use("/api/posts", posts);
 //   });
 
 // app.use(express.static('social=fe/dist'));
+app.use(express.static('client'));
 
-app.get("/", (req, res) => {
-  console.log("hello");
-  res.send("hello");
-});
+
+// app.get("/", (req, res) => {
+//   console.log("hello");
+//   res.send("hello");
+// });
 
 //app.listen(port, () => console.log(`Server running on port ${port}`));
